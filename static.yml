@@ -78,12 +78,12 @@ Effective date: 1 October 2026 &middot; Last updated: 1 October 2026</p>
 <p>The email is sent from an address belonging to our email service, not from your own mailbox, and the recipient can see it. We do not keep a copy of the emails or PDFs in our own database. The gateway and the delivery provider process them in order to deliver them and may keep delivery logs under their own policies. This happens only when you choose to send an email.</p>
 
 <h2>5. SMS payment reminders</h2>
-<p>The app can send SMS reminders to customers who have unpaid invoices. When this is turned on, reminders are sent <strong>automatically when you open the app</strong>: the first one 2 days after the invoice date, then one a day until the invoice is paid. You can turn this off at any time in Settings. Each SMS is sent through our SMS gateway to our SMS provider (Twilio) and contains:</p>
+<p>The app can send SMS reminders to customers who have unpaid invoices. When this is turned on, reminders are sent <strong>automatically when you open the app</strong>. For each invoice you choose when the first reminder starts (a number of days after the invoice date) and how often it repeats (every few days) until the invoice is paid; by default this is 2 days, then every day. You can turn reminders off for an invoice, or switch off automatic reminders completely in Settings, at any time. Each SMS is sent through our SMS gateway to our SMS provider (Twilio) and contains:</p>
 <ul>
   <li>The customer's phone number</li>
   <li>The reminder text, which can include the customer's name, invoice number(s), invoice and due dates, the pending amount, your business name, your phone number and your UPI ID</li>
 </ul>
-<p>We do not keep these messages in our own database. The SMS provider and mobile networks process them in order to deliver them and may keep delivery records under their own policies. The app records on your phone when each reminder was sent so that it does not repeat it on the same day.</p>
+<p>We do not keep these messages in our own database. The SMS provider and mobile networks process them in order to deliver them and may keep delivery records under their own policies. The app records on your phone each invoice's reminder schedule and when each reminder was sent, so that it follows your schedule and does not repeat a reminder too soon.</p>
 <p><strong>Your customers' information:</strong> the phone numbers and email addresses of your customers are information you enter yourself. By using the email and SMS features you confirm that you are entitled to contact those customers, and you are responsible for complying with the laws that apply to your messages (for example, rules on commercial messages and consent). Standard message and carrier charges may apply to SMS.</p>
 <p>In some configurations the app may use your own SMS account instead of ours. If you enter your own Twilio login in the app, it is stored only on your phone, is not included in Backup, and is used only to send messages from your own account.</p>
 
@@ -121,7 +121,7 @@ Effective date: 1 October 2026 &middot; Last updated: 1 October 2026</p>
 <ul>
   <li><strong>Access, correction or deletion:</strong> email us at the address below with the name you entered in the app and we will look up and delete or correct the usage information linked to it. Please mention your app version if you can.</li>
   <li><strong>Delete data on your phone:</strong> uninstall the app or clear its storage in your phone's Settings.</li>
-  <li><strong>Stop SMS reminders:</strong> turn off automatic SMS reminders in Settings. Emails are sent only when you choose to send them.</li>
+  <li><strong>Stop SMS reminders:</strong> turn off reminders for a single invoice on the invoice form, or turn off automatic SMS reminders in Settings. Emails are sent only when you choose to send them.</li>
   <li><strong>Customers who received a message:</strong> if you are a customer who received an email or SMS from a business using this app, please contact that business. You can also write to us and we will help where we can.</li>
   <li><strong>Stop usage information:</strong> uninstalling the app stops all uploads.</li>
 </ul>
