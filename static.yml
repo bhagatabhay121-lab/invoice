@@ -31,27 +31,28 @@
 <div class="card">
 
 <h1>Privacy Policy</h1>
-<p class="muted"><strong>Free Invoice Generator</strong> (package name: com.abhay.invoice)<br>
-Effective date: 30 September 2026 &middot; Last updated: 30 September 2026</p>
+<p class="muted"><strong>Free Invoice Generator</strong> (also shown inside the app as "Invoice Studio"; package name: com.abhay.invoice)<br>
+Effective date: 1 October 2026 &middot; Last updated: 1 October 2026</p>
 
-<p>Free Invoice Generator ("the app", "we", "us") helps you create GST invoices, keep a list of customers and products, and export invoices as PDF files. This policy explains what information the app handles, where it goes, and the choices you have. We have tried to keep it short and honest.</p>
+<p>Free Invoice Generator ("the app", "we", "us") helps you create GST invoices and related documents (such as quotations, challans, proforma invoices and credit notes), keep a list of customers and products, export PDFs and GST reports, and send invoices and payment reminders to your customers by email and SMS. This policy explains what information the app handles, where it goes, and the choices you have. We have tried to keep it short and honest.</p>
 
 <h2>1. The short version</h2>
 <ul>
-  <li>Your invoices, customers, products, business profile, logo, signature and bank details are stored <strong>only on your phone</strong>. We do not upload them and we cannot see them.</li>
+  <li>Your invoices, customers, products, business profile, logo, signature and bank details are stored <strong>on your phone</strong>. We do not upload or back them up, and we cannot see them.</li>
+  <li><strong>The exception is when you (or the app's automatic reminders) send something out.</strong> When an invoice or statement is emailed, the email address, message and PDF are sent through our email service. When an SMS payment reminder is sent, the customer's phone number and the reminder text are sent through our SMS service.</li>
   <li>We collect a small amount of usage information (your name, when you open the app and how long you use it) to understand how the app is used and to improve it.</li>
   <li>When you look up a GSTIN, the GSTIN and the CAPTCHA you type are sent to a GST portal service to fetch the business's public details.</li>
   <li>We do not show ads, do not sell your data and do not share it for marketing.</li>
 </ul>
 
 <h2>2. Information stored only on your device</h2>
-<p>The following is created by you and saved in the app's private storage on your phone. It is <strong>not</strong> sent to us or to any server:</p>
+<p>The following is created by you and saved in the app's private storage on your phone. It is <strong>not</strong> uploaded to us or to any server, except as described in sections 4 and 5 when you send an email or SMS:</p>
 <ul>
-  <li>Your business profile: business name, address, GSTIN, PAN, phone, email, bank details, UPI ID, terms text, logo, signature and watermark</li>
-  <li>Customers, products and invoices you create, including invoice numbers, items, amounts and notes</li>
-  <li>App settings such as language, theme, default GST rate and Do Not Disturb preference</li>
+  <li>Your business profile: business name, address, GSTIN, PAN, MSME number, phone, email, bank details, UPI ID, terms text, logo, signature and watermark</li>
+  <li>Customers (including their phone numbers and email addresses), products and the invoices and other documents you create, including numbers, items, amounts, payment status, reminder history and notes</li>
+  <li>App settings such as language, theme, default GST rate, Do Not Disturb preference and the automatic SMS reminder setting</li>
 </ul>
-<p>Because this information is kept only on your phone, <strong>we do not hold a backup of it</strong>. If you uninstall the app, clear its data or lose your phone, this information is erased and we cannot recover it. The app has a Backup screen that copies your data as text so that you can save it yourself (for example in Notes, email or WhatsApp). What you do with that copied text is up to you.</p>
+<p>Because this information is kept on your phone, <strong>we do not hold a backup of it</strong>. If you uninstall the app, clear its data or lose your phone, this information is erased and we cannot recover it.</p>
 
 <h2>3. Information we collect (usage information)</h2>
 <p>When you first open the app you are asked for your name. From then on the app sends the following to our Firebase Realtime Database, provided by Google:</p>
@@ -64,45 +65,75 @@ Effective date: 30 September 2026 &middot; Last updated: 30 September 2026</p>
   <tr><td>App version, phone platform (for example Android) and selected app language</td><td>To fix problems that affect particular versions or languages</td></tr>
 </table>
 </div>
-<p>We do <strong>not</strong> collect your location, contacts, phone number, advertising ID, or the contents of your invoices, customers or products.</p>
+<p>We do <strong>not</strong> collect your location, contacts, advertising ID, or the contents of your invoices, customers or products as part of this usage information.</p>
 
-<h2>4. GSTIN lookup</h2>
-<p>If you type a GSTIN when adding a customer, the app can fetch that business's public registration details (such as trade name, address and status). To do this, the <strong>GSTIN and the CAPTCHA text you type</strong> are sent over the internet to a GST portal service (a public GST search service). The details returned are put into the customer form on your phone. This lookup only happens when you enter a GSTIN and choose to complete the CAPTCHA, and you can skip it and fill in the details manually. That service has its own privacy practices, which we do not control.</p>
-
-<h2>5. Permissions the app may ask for</h2>
+<h2>4. Sending invoices and statements by email</h2>
+<p>When you choose "Email PDF" or "Email statement", the app builds the PDF on your phone and sends the following to our email gateway, which hands it to our email delivery provider (Maileroo) to deliver:</p>
 <ul>
-  <li><strong>Photos / files:</strong> only when you choose to add a logo, signature or watermark image. The image you pick is stored on your phone inside the app.</li>
+  <li>The recipient email address(es) you enter or that are saved for the customer</li>
+  <li>The subject and message text</li>
+  <li>The PDF attachment. Depending on what you put in the document, it can include your business details (name, address, GSTIN, bank details, UPI ID, logo, signature), your customer's details, line items and amounts</li>
+  <li>Your business name (shown as the sender name) and your profile email address, if you have saved one (set as the Reply-To address so that replies reach you)</li>
+</ul>
+<p>The email is sent from an address belonging to our email service, not from your own mailbox, and the recipient can see it. We do not keep a copy of the emails or PDFs in our own database. The gateway and the delivery provider process them in order to deliver them and may keep delivery logs under their own policies. This happens only when you choose to send an email.</p>
+
+<h2>5. SMS payment reminders</h2>
+<p>The app can send SMS reminders to customers who have unpaid invoices. When this is turned on, reminders are sent <strong>automatically when you open the app</strong>: the first one 2 days after the invoice date, then one a day until the invoice is paid. You can turn this off at any time in Settings. Each SMS is sent through our SMS gateway to our SMS provider (Twilio) and contains:</p>
+<ul>
+  <li>The customer's phone number</li>
+  <li>The reminder text, which can include the customer's name, invoice number(s), invoice and due dates, the pending amount, your business name, your phone number and your UPI ID</li>
+</ul>
+<p>We do not keep these messages in our own database. The SMS provider and mobile networks process them in order to deliver them and may keep delivery records under their own policies. The app records on your phone when each reminder was sent so that it does not repeat it on the same day.</p>
+<p><strong>Your customers' information:</strong> the phone numbers and email addresses of your customers are information you enter yourself. By using the email and SMS features you confirm that you are entitled to contact those customers, and you are responsible for complying with the laws that apply to your messages (for example, rules on commercial messages and consent). Standard message and carrier charges may apply to SMS.</p>
+<p>In some configurations the app may use your own SMS account instead of ours. If you enter your own Twilio login in the app, it is stored only on your phone, is not included in Backup, and is used only to send messages from your own account.</p>
+
+<h2>6. GSTIN lookup</h2>
+<p>If you type a GSTIN when adding a customer, the app can fetch that business's public registration details (such as trade name, address and status). To do this, the app first requests a CAPTCHA image, and then the <strong>GSTIN and the CAPTCHA text you type</strong> are sent over the internet to a third-party GST portal search service (ExpressGST). Like any internet request, this also reveals your IP address to that service. The details returned are put into the customer form on your phone. This lookup only happens when you enter a GSTIN and choose to complete the CAPTCHA, and you can skip it and fill in the details manually. That service has its own privacy practices, which we do not control.</p>
+
+<h2>7. Permissions the app may ask for</h2>
+<ul>
+  <li><strong>Photos / files / camera:</strong> only when you choose to add a logo, signature or watermark image, either from your gallery or by taking a photo. The image you pick is stored on your phone inside the app. If you add a logo, signature or watermark to an invoice and then email it, the image is part of the PDF that is sent.</li>
   <li><strong>Do Not Disturb access (optional):</strong> only if you turn on the "Do Not Disturb while the app is open" setting. It is used to switch Do Not Disturb on while the app is open and off when you leave. Nothing about this is sent to us.</li>
-  <li><strong>Internet:</strong> to upload the usage information in section 3 and to do the GSTIN lookup in section 4.</li>
+  <li><strong>Internet:</strong> to upload the usage information in section 3, to send emails and SMS reminders (sections 4 and 5) and to do the GSTIN lookup (section 6).</li>
 </ul>
 
-<h2>6. Sharing and printing invoices</h2>
-<p>When you export, print or share an invoice as a PDF, the file is created on your phone and handed to the app you choose (for example WhatsApp, email or a printer). Once you share it, it is handled by that app and the person you send it to, under their rules. We do not receive a copy.</p>
+<h2>8. Exporting, printing and sharing</h2>
+<p>When you export, print or share an invoice, statement or GST report (PDF or Excel file), the file is created on your phone and handed to the app you choose (for example WhatsApp, email or a printer). Once you share it, it is handled by that app and the person you send it to, under their rules. We do not receive a copy.</p>
 
-<h2>7. Who we share information with</h2>
-<p>We do not sell or rent your information. The usage information in section 3 is stored with <strong>Google Firebase</strong>, which acts as our service provider (see <a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener">Firebase privacy information</a>). The GSTIN lookup in section 4 goes to the GST portal service. We may also disclose information if the law requires it.</p>
+<h2>9. Who we share information with</h2>
+<p>We do not sell or rent your information. We use the following service providers, each only for the purpose described:</p>
+<ul>
+  <li><strong>Google Firebase</strong> &ndash; stores the usage information in section 3 (<a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener">Firebase privacy information</a>).</li>
+  <li><strong>Supabase</strong> &ndash; hosts the gateway that passes your emails and SMS reminders to the delivery providers below.</li>
+  <li><strong>Maileroo</strong> &ndash; delivers the emails you send (section 4).</li>
+  <li><strong>Twilio</strong> &ndash; delivers the SMS reminders (section 5).</li>
+  <li><strong>ExpressGST</strong> &ndash; the third-party GST portal search service used for GSTIN lookup (section 6).</li>
+</ul>
+<p>We may also disclose information if the law requires it.</p>
 
-<h2>8. How long we keep information</h2>
-<p>Information on your phone stays until you delete it, clear the app's data or uninstall the app. Usage information in our database is kept while the app is in use and for as long as we need it to understand and improve the app, after which it may be deleted or anonymised. You can ask us to delete it sooner (see section 10).</p>
+<h2>10. How long we keep information</h2>
+<p>Information on your phone stays until you delete it, clear the app's data or uninstall the app. Usage information in our database is kept while the app is in use and for as long as we need it to understand and improve the app, after which it may be deleted or anonymised. We do not store the content of emails or SMS messages in our own database; the providers listed in section 9 keep delivery records for the periods set by their own policies. You can ask us to delete your usage information sooner (see section 12).</p>
 
-<h2>9. Security</h2>
-<p>Information sent to Firebase and to the GST service travels over encrypted (HTTPS) connections. Data stored on your phone is protected by your phone's own security, such as its screen lock, so we recommend keeping one. No system is completely secure, so we cannot guarantee absolute security.</p>
+<h2>11. Security</h2>
+<p>Information sent to Firebase, to our email and SMS gateway and to the GST service travels over encrypted (HTTPS) connections. Data stored on your phone is protected by your phone's own security, such as its screen lock, so we recommend keeping one. Email and SMS are not end-to-end encrypted once they leave the app, so please avoid putting sensitive information in message text. No system is completely secure, so we cannot guarantee absolute security.</p>
 
-<h2>10. Your choices and rights</h2>
+<h2>12. Your choices and rights</h2>
 <ul>
   <li><strong>Access, correction or deletion:</strong> email us at the address below with the name you entered in the app and we will look up and delete or correct the usage information linked to it. Please mention your app version if you can.</li>
   <li><strong>Delete data on your phone:</strong> uninstall the app or clear its storage in your phone's Settings.</li>
+  <li><strong>Stop SMS reminders:</strong> turn off automatic SMS reminders in Settings. Emails are sent only when you choose to send them.</li>
+  <li><strong>Customers who received a message:</strong> if you are a customer who received an email or SMS from a business using this app, please contact that business. You can also write to us and we will help where we can.</li>
   <li><strong>Stop usage information:</strong> uninstalling the app stops all uploads.</li>
 </ul>
 <p>Because the install ID is random and not linked to your phone number or email, we may need the name you entered to find your record.</p>
 
-<h2>11. Children's privacy</h2>
+<h2>13. Children's privacy</h2>
 <p>The app is a business tool and is not directed to children under 13 (or under 18 where the law of your country requires parental consent). We do not knowingly collect information from children. If you believe a child has given us a name, please contact us and we will delete it.</p>
 
-<h2>12. Changes to this policy</h2>
+<h2>14. Changes to this policy</h2>
 <p>We may update this policy from time to time. When we do, we will change the "Last updated" date above and, for significant changes, show a notice in the app. Continuing to use the app after a change means you accept the updated policy.</p>
 
-<h2>13. Contact us</h2>
+<h2>15. Contact us</h2>
 <p>Questions, requests or complaints about privacy:</p>
 <p><strong>Free Invoice Generator</strong><br>
 Package name: com.abhay.invoice<br>
