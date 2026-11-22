@@ -3,153 +3,297 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Privacy Policy - Free Invoice Generator</title>
+<title>Privacy Policy - Invoice Maker (Free Invoice Generator)</title>
 <style>
-  :root { --bg:#f5f7f6; --card:#fff; --text:#1c2321; --muted:#5b6866; --brand:#0b4f4a; --line:#dfe6e4; }
-  @media (prefers-color-scheme: dark) {
-    :root { --bg:#121615; --card:#1a1f1e; --text:#e8eeec; --muted:#9aa8a5; --brand:#6fd0c6; --line:#2b3432; }
-  }
-  * { box-sizing: border-box; }
-  body { margin:0; background:var(--bg); color:var(--text); font:16px/1.6 -apple-system,"Segoe UI",Roboto,Arial,sans-serif; }
-  main { max-width:780px; margin:0 auto; padding:24px 16px 60px; }
-  .card { background:var(--card); border:1px solid var(--line); border-radius:16px; padding:24px; }
-  h1 { margin:0 0 4px; font-size:28px; color:var(--brand); }
-  h2 { margin:28px 0 8px; font-size:19px; color:var(--brand); }
-  p, li { color:var(--text); }
-  .muted { color:var(--muted); font-size:14px; }
-  ul { padding-left:22px; }
-  li { margin:4px 0; }
-  table { width:100%; border-collapse:collapse; margin:10px 0; font-size:14.5px; }
-  th, td { text-align:left; padding:8px 10px; border-bottom:1px solid var(--line); vertical-align:top; }
-  th { color:var(--muted); font-weight:600; }
-  .table-wrap { overflow-x:auto; }
-  a { color:var(--brand); }
+  :root{--bg:#f6f8fa;--card:#fff;--text:#1d2530;--muted:#5b6675;--line:#dde3ea;--brand:#0f766e;--soft:#e6f4f2}
+  @media (prefers-color-scheme:dark){:root{--bg:#10151b;--card:#18202a;--text:#e8edf2;--muted:#9aa7b5;--line:#2a3542;--brand:#4fd1c5;--soft:#16302d}}
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--text);font:16px/1.65 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+  .wrap{max-width:880px;margin:0 auto;padding:24px 16px 64px}
+  header{padding:28px 0 8px}
+  h1{font-size:28px;margin:0 0 6px}
+  h2{font-size:21px;margin:0 0 10px;color:var(--brand)}
+  h3{font-size:16.5px;margin:18px 0 6px}
+  .meta{color:var(--muted);font-size:14px}
+  section,.toc,.note{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:20px 22px;margin:16px 0}
+  .note{background:var(--soft)}
+  .toc ol{columns:2;column-gap:28px;margin:8px 0 0;padding-left:20px}
+  .toc a{color:var(--brand);text-decoration:none}
+  .toc li{margin:3px 0;break-inside:avoid}
+  ul,ol{padding-left:22px}
+  li{margin:4px 0}
+  .scroll{overflow-x:auto}
+  table{border-collapse:collapse;width:100%;font-size:14.5px;min-width:560px}
+  th,td{border:1px solid var(--line);padding:8px 10px;text-align:left;vertical-align:top}
+  th{background:var(--soft)}
+  a{color:var(--brand)}
+  @media (max-width:640px){.toc ol{columns:1}h1{font-size:24px}}
 </style>
 </head>
 <body>
-<main>
-<div class="card">
+<div class="wrap">
 
-<h1>Privacy Policy</h1>
-<p class="muted"><strong>Free Invoice Generator</strong> (also shown inside the app as "Invoice Studio"; package name: com.abhay.invoice)<br>
-Effective date: 6 October 2026 &middot; Last updated: 6 October 2026</p>
+<header>
+  <h1>Privacy Policy</h1>
+  <div class="meta">Invoice Maker - Billing App (Play Store name: Free Invoice Generator) &middot; Package com.abhay.invoice<br>
+  Policy version 1 &middot; Effective 22 November 2026 &middot; Applies to the Android app, the iOS app (if offered) and the Windows app</div>
+</header>
 
-<p>Free Invoice Generator ("the app", "we", "us") helps you create GST invoices and related documents (such as quotations, challans, proforma invoices and credit notes), keep a list of customers and products, export PDFs and GST reports, and email invoices and statements to your customers. This policy explains what information the app handles, where it goes, and the choices you have. We have tried to keep it short and honest.</p>
-
-<h2>1. The short version</h2>
-<ul>
-  <li>Your invoices, customers, products and business profile are saved <strong>on your phone</strong>, and <strong>a copy is also backed up to our cloud database (Google Firebase)</strong> once you have entered your name and accepted the Terms &amp; conditions. We can see this backed-up data.</li>
-  <li>We also collect usage information: your name, when you open the app, how long you use it, and a summary of your business and of the documents you create.</li>
-  <li>If you send us feedback from Settings, it is stored in the same database together with your name and the contact you choose to give.</li>
-  <li>When you email an invoice or statement, the email address, message and PDF are sent through our email service.</li>
-  <li>When you look up a GSTIN, the GSTIN and the CAPTCHA you type are sent to a GST portal search service to fetch the business's public details.</li>
-  <li><strong>You can ask us to delete your data at any time</strong> (see section 12).</li>
-  <li>We do not show ads, do not sell your data and do not share it for marketing.</li>
-</ul>
-
-<h2>2. Information stored on your device</h2>
-<p>The following is created by you and saved in the app's private storage on your phone:</p>
-<ul>
-  <li>Your business profile: business name, address, GSTIN, PAN, MSME number, phone, email, bank details, UPI ID, terms text, logo, signature and watermark</li>
-  <li>Customers (including their phone numbers and email addresses), products and the invoices and other documents you create, including numbers, items, amounts, payments, status and notes</li>
-  <li>App settings such as language, theme, default GST rate, Do Not Disturb preference and the sender name used for emails</li>
-</ul>
-<p>If you uninstall the app, clear its data or lose your phone, the copy on your phone is erased. The cloud backup described in section 3 stays with us until you ask us to delete it (section 12).</p>
-
-<h2>3. Cloud backup of your data</h2>
-<p>After you enter your name and accept the Terms &amp; conditions, the app automatically backs up your data to our Firebase Realtime Database. The backup is stored under a random install ID (see section 4) and includes:</p>
-<ul>
-  <li>Your business profile, including name, address, GSTIN, PAN, MSME number, phone, email, bank details, UPI ID, terms text, logo, signature and watermark image</li>
-  <li>Your product list</li>
-  <li>Your customers, including their names, addresses, GSTIN, phone numbers and email addresses</li>
-  <li>Every invoice and other document you create, with its items, amounts, payments, status and notes, and the next document numbers</li>
-</ul>
-<p>The app uploads only what changed, shortly after you make a change, when you leave the app, and it retries automatically if you were offline. When you delete a customer, product or document on your phone, its cloud copy is removed at the next backup. We use the backup to keep your data safe, to give you support when something goes wrong, and to understand and improve the app. It is not shown to other users of the app, and access to it is limited to the app's administrator.</p>
-<p><strong>Your customers' information:</strong> the names, phone numbers, email addresses and other details of your customers are information you enter yourself. By using the app you confirm that you are entitled to store and use that information, and you are responsible for complying with the laws that apply to it.</p>
-
-<h2>4. Usage information we collect</h2>
-<p>From the time you enter your name, the app sends the following to our Firebase Realtime Database:</p>
-<div class="table-wrap">
-<table>
-  <tr><th>Information</th><th>Why we collect it</th></tr>
-  <tr><td>The name you enter</td><td>To tell users apart when we review usage, give support and answer feedback or deletion requests</td></tr>
-  <tr><td>A random install ID generated by the app (it is not your device advertising ID, phone number or email)</td><td>To count how many people use the app without counting the same person twice, and to keep your backup separate from everyone else's</td></tr>
-  <tr><td>Install date, last-seen time, number of visits and total time the app was open, per day and in total</td><td>To measure daily and total users and how much the app is used</td></tr>
-  <tr><td>App version, phone platform (for example Android) and selected app language</td><td>To fix problems that affect particular versions or languages</td></tr>
-  <tr><td>A business summary: business name, GSTIN, city, state, phone and email from your profile, and counts of your documents, drafts, customers and products, the total amount billed and received, and the time of your last backup</td><td>To show the administrator a list of users without opening every invoice, and to support you</td></tr>
-  <tr><td>For each invoice or document you create or update: the date and time, whether it was created or updated, its type and number, and your UPI ID</td><td>To understand how the app is used</td></tr>
-</table>
+<div class="note">
+  <strong>In short.</strong> We keep your phone number, your name and the business data you enter so that you can sign in, back your invoices up and get them back on a new phone. We do not sell your data and we do not show ads. Analytics and crash reports are optional and switched off until you allow them. You can switch them off again, copy your data, correct it, or delete your data or your whole account at any time from <em>Settings &rarr; Privacy &amp; consent</em>.
 </div>
-<p>We do <strong>not</strong> collect your location, your contacts list or your advertising ID.</p>
 
-<h2>5. Feedback you send</h2>
-<p>In Settings you can choose "Send feedback". The feedback you send is stored in our Firebase Realtime Database and includes: the type you pick (suggestion, problem, compliment or other), an optional star rating, your message, an optional phone number or email if you want a reply, your name, your install ID, the app version, your phone platform and app language, and the time. We use it only to improve the app and to reply to you. If you are offline, your feedback is kept on your phone and sent the next time the app opens. You can ask us to delete it at any time (section 12).</p>
+<nav class="toc">
+  <strong>Contents</strong>
+  <ol>
+    <li><a href="#who">Who we are</a></li>
+    <li><a href="#law">Law that applies</a></li>
+    <li><a href="#collect">Personal data we collect</a></li>
+    <li><a href="#notcollect">Data we do not collect</a></li>
+    <li><a href="#purposes">Why we use your data</a></li>
+    <li><a href="#consent">Notice and consent</a></li>
+    <li><a href="#permissions">Android permissions</a></li>
+    <li><a href="#sdk">Services and companies that handle data</a></li>
+    <li><a href="#share">Sharing and disclosure</a></li>
+    <li><a href="#abroad">Storage location and transfers outside India</a></li>
+    <li><a href="#retention">How long we keep data</a></li>
+    <li><a href="#deletion">Deleting your data</a></li>
+    <li><a href="#rights">Your rights</a></li>
+    <li><a href="#children">Children</a></li>
+    <li><a href="#security">Security</a></li>
+    <li><a href="#breach">Data breach</a></li>
+    <li><a href="#customers">Data of your customers</a></li>
+    <li><a href="#windows">Windows app</a></li>
+    <li><a href="#tracking">Ads, tracking and profiling</a></li>
+    <li><a href="#links">Links to other services</a></li>
+    <li><a href="#changes">Changes to this policy</a></li>
+    <li><a href="#contact">Contact and grievances</a></li>
+  </ol>
+</nav>
 
-<h2>6. Messages and updates from us</h2>
-<p>The app checks our database when it opens, when you return to it, and about once a minute while it is open, to see whether a new version is available, whether the app is in maintenance, and whether there are messages for you (for example announcements or update notices). The administrator can also block an install from using the app. When a message is delivered to you or you open it, the app records the time together with your name and install ID, so we can tell whether the message reached you. Messages may contain a link; it opens in your phone's browser only when you tap it.</p>
+<section id="who">
+  <h2>1. Who we are</h2>
+  <p>The app is published by <strong>Abhay Bhagat</strong> (&ldquo;we&rdquo;, &ldquo;us&rdquo;). We decide why and how your personal data is used in the app, so we are the <em>Data Fiduciary</em> under the Digital Personal Data Protection Act, 2023. Invoice Maker is a GST invoice generator with saved customers, products, quotations, proforma invoices, delivery challans, khata (udhaar) register, stock register, expenses and GST reports, PDF export, cloud backup and sync between your phone and PC.</p>
+  <p>Privacy contact and grievance contact: <a href="mailto:abhaybhagat170@gmail.com">abhaybhagat170@gmail.com</a> (see section 22).</p>
+</section>
 
-<h2>7. Sending invoices and statements by email</h2>
-<p>When you choose "Email PDF" or "Email statement", the app builds the PDF on your phone and sends the following to our email gateway, which hands it to our email delivery provider (Maileroo) to deliver:</p>
-<ul>
-  <li>The recipient email address(es) you enter or that are saved for the customer</li>
-  <li>The subject and message text</li>
-  <li>The PDF attachment. Depending on what you put in the document, it can include your business details (name, address, GSTIN, bank details, UPI ID, logo, signature), your customer's details, line items and amounts</li>
-  <li>Your business name or sender name (shown as the sender) and your profile email address, if you have saved one (set as the Reply-To address so that replies reach you)</li>
-</ul>
-<p>The email is sent from an address belonging to our email service, not from your own mailbox, and the recipient can see it. We do not keep a copy of the emails or PDFs in our own database. The gateway and the delivery provider process them in order to deliver them and may keep delivery logs under their own policies. This happens only when you choose to send an email. By using this feature you confirm that you are entitled to contact those customers and you are responsible for complying with the laws that apply to your messages.</p>
+<section id="law">
+  <h2>2. Law that applies</h2>
+  <p>This policy is written under the Digital Personal Data Protection Act, 2023 and the Digital Personal Data Protection Rules, 2025 of India, and other Indian laws that apply to us. The Act is being brought into force in phases, and its main duties on notice, consent, rights, security and breach are scheduled to apply from 13 May 2027. We follow them now. This policy is not a certificate of legal compliance and may be updated when the law or notified rules change.</p>
+</section>
 
-<h2>8. GSTIN lookup</h2>
-<p>If you type a GSTIN when adding a customer, the app can fetch that business's public registration details (such as trade name, address and status). To do this, the app first requests a CAPTCHA image, and then the <strong>GSTIN and the CAPTCHA text you type</strong> are sent over the internet to a third-party GST portal search service (ExpressGST). Like any internet request, this also reveals your IP address to that service. The details returned are put into the customer form on your phone. This lookup only happens when you enter a GSTIN and choose to complete the CAPTCHA, and you can skip it and fill in the details manually. That service has its own privacy practices, which we do not control.</p>
+<section id="collect">
+  <h2>3. Personal data we collect</h2>
+  <div class="scroll"><table>
+    <tr><th>Data</th><th>How we get it</th><th>Why</th><th>Required?</th></tr>
+    <tr><td>Mobile number (with +91 country code)</td><td>You type it to sign in; we send a one-time code by SMS</td><td>Sign-in. Your cloud data is stored under this number so it comes back on a new phone or on your PC</td><td>Required</td></tr>
+    <tr><td>Name</td><td>You enter it after sign-in</td><td>Support and showing who owns the account</td><td>Required</td></tr>
+    <tr><td>Business profile: business name, address, GSTIN, PAN, state, phone, email, bank name, account number, IFSC, UPI ID, default terms, logo image, owner signature image, invoice style choices</td><td>You enter or upload it</td><td>Printed on your invoices; backup and restore</td><td>Required to make invoices; you choose what to fill</td></tr>
+    <tr><td>Your customers: name, phone, email, address, GSTIN, state, notes</td><td>You enter it</td><td>Create invoices and khata entries; backup</td><td>You choose what to enter</td></tr>
+    <tr><td>Products and stock: items, HSN/SAC, rates, quantities, batches, stock movements</td><td>You enter it</td><td>Create invoices; stock register; backup</td><td>You choose what to enter</td></tr>
+    <tr><td>Documents: invoices, quotations, proforma invoices, delivery challans, amounts, taxes, payment status, dates, document numbers, notes, warranty text</td><td>You create them</td><td>Make PDFs, reports and GST returns; backup</td><td>Required for the app to work</td></tr>
+    <tr><td>Khata (udhaar) register and Accounts (expenses, GST filing ticks)</td><td>You enter it</td><td>Track money owed and paid; backup</td><td>Optional feature</td></tr>
+    <tr><td>Document verification keys and verification codes</td><td>Made on your phone</td><td>Let you check that a PDF was made by your account. Codes are computed on the phone</td><td>Automatic</td></tr>
+    <tr><td>Random install ID and referral code</td><td>Made by the app on first start</td><td>Invite and reward feature, linking old and new records, crash reports</td><td>Automatic</td></tr>
+    <tr><td>Language, theme and app settings; sync stamps and backup state</td><td>App</td><td>Run the app and keep devices in step</td><td>Automatic</td></tr>
+    <tr><td>Privacy choices: notice version, your choices, time, platform</td><td>When you agree or change a choice</td><td>Proof of your consent and its withdrawal</td><td>Required</td></tr>
+    <tr><td>Feedback: message, rating, type, the contact you choose to add, name, app version, phone type, language, time</td><td>You send it from Settings</td><td>Reply to you and improve the app</td><td>Only if you send it</td></tr>
+    <tr><td>Invite code you use and friends who join with your code</td><td>You or the friend enter it, or the Play Store install referrer</td><td>Give Premium days to both people</td><td>Only if you use the feature</td></tr>
+    <tr><td>Messages from us (updates, notices) and whether they were delivered or read</td><td>Our admin console</td><td>Tell you about updates, problems or maintenance. Your name is added to read receipts only if analytics is on</td><td>Automatic</td></tr>
+    <tr><td>Email details when you email an invoice: recipient email address, subject, message and the PDF</td><td>You send it from the app</td><td>Deliver the email for you</td><td>Only when you use it</td></tr>
+    <tr><td>GSTIN you look up and the CAPTCHA you type</td><td>You type it</td><td>Fetch business details from the GST portal service. Results may be cached by GSTIN for other users; they are business details, not your personal data</td><td>Only when you use it</td></tr>
+    <tr><td><strong>Optional analytics (off until you allow it):</strong> time of use, number of sessions, daily use, documents created or updated by type, last document numbers, UPI ID, app version, phone platform, language, install date, last seen, your phone number and name attached to these records</td><td>The app, only after you switch analytics on</td><td>Find problems and improve the app</td><td>Optional</td></tr>
+    <tr><td><strong>Optional crash, screen and speed reports (off until you allow it):</strong> crash traces, screens visited, actions such as &ldquo;document saved&rdquo;, timing of screens and network calls (host and first part of the address only), device model, operating system, app version, country and approximate region from IP address, random install ID</td><td>Firebase Crashlytics, Analytics and Performance Monitoring</td><td>Fix crashes and slow screens</td><td>Optional</td></tr>
+    <tr><td>Safety copies of your data on your phone</td><td>Made automatically around sign-in</td><td>Avoid data loss if something goes wrong</td><td>Automatic, phone only</td></tr>
+  </table></div>
+  <p>Crash and analytics reports are tied to the random install ID. We do not put your phone number, name, customers or amounts in these reports.</p>
+</section>
 
-<h2>9. Permissions the app may ask for</h2>
-<ul>
-  <li><strong>Photos / files / camera:</strong> only when you choose to add a logo, signature or watermark image, either from your gallery or by taking a photo. The image is stored on your phone inside the app and is included in your cloud backup (section 3). If you add it to an invoice and then email it, the image is part of the PDF that is sent.</li>
-  <li><strong>Do Not Disturb access (optional):</strong> only if you turn on the "Do Not Disturb while the app is open" setting. It is used to switch Do Not Disturb on while the app is open and off when you leave. Nothing about this is sent to us.</li>
-  <li><strong>Internet:</strong> to back up your data and send usage information (sections 3 and 4), to send feedback (section 5), to check for updates and messages (section 6), to send emails (section 7) and to do the GSTIN lookup (section 8).</li>
-</ul>
+<section id="notcollect">
+  <h2>4. Data we do not collect</h2>
+  <ul>
+    <li>Your contacts, SMS, call logs or call recordings.</li>
+    <li>Your location (precise or approximate) through the device. Firebase may infer a rough region from your IP address if you allow analytics.</li>
+    <li>Microphone recordings, or camera images except the photo you pick or take for your logo or signature.</li>
+    <li>Your advertising ID, or any data for advertising.</li>
+    <li>Card, UPI PIN or net-banking details. The app does not take payments. The UPI ID and bank details you enter are printed on your invoices.</li>
+    <li>Biometric data, health data, or any precise device-wide tracking.</li>
+  </ul>
+</section>
 
-<h2>10. Exporting, printing and sharing</h2>
-<p>When you export, print or share an invoice, statement or GST report (PDF or Excel file), the file is created on your phone and handed to the app you choose (for example WhatsApp, email or a printer). In the same way, if you use "Backup" in the app to copy your data as text, that text stays on your phone until you paste it somewhere yourself. Once you share something, it is handled by that app and the person you send it to, under their rules. We do not receive a copy.</p>
+<section id="purposes">
+  <h2>5. Why we use your data</h2>
+  <ul>
+    <li><strong>Provide the app (consent):</strong> sign you in, create invoices and reports, back up and restore your data, sync your phone and PC, email invoices at your request, look up GSTINs, make the invite and reward feature work.</li>
+    <li><strong>Support and communication:</strong> answer feedback and problems, contact you about your account, send you update, maintenance and service notices, block or pause an account that breaks the terms.</li>
+    <li><strong>Improve the app (optional consent):</strong> analytics and crash reports.</li>
+    <li><strong>Security and fairness:</strong> protect accounts, find misuse of invite codes, prevent fraud, keep logs of consent and deletion requests.</li>
+    <li><strong>Legal duties:</strong> keep or disclose data only where a law, court or authority requires it.</li>
+  </ul>
+  <p>We use data only for the purposes above. If we want to use it for a new purpose, we will first tell you and, where needed, ask for your consent again. We never sell your data or use it for advertising.</p>
+</section>
 
-<h2>11. Who we share information with</h2>
-<p>We do not sell or rent your information. We use the following service providers, each only for the purpose described:</p>
-<ul>
-  <li><strong>Google Firebase</strong> &ndash; stores the cloud backup, usage information, feedback and messages in sections 3 to 6 (<a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener">Firebase privacy information</a>).</li>
-  <li><strong>Supabase</strong> &ndash; hosts the gateway that passes your emails to the delivery provider below.</li>
-  <li><strong>Maileroo</strong> &ndash; delivers the emails you send (section 7).</li>
-  <li><strong>ExpressGST</strong> &ndash; the third-party GST portal search service used for GSTIN lookup (section 8).</li>
-</ul>
-<p>We may also disclose information if the law requires it.</p>
+<section id="consent">
+  <h2>6. Notice and consent</h2>
+  <ul>
+    <li>After you sign in, a separate <em>Your privacy</em> screen shows this notice in simple words. Nothing is uploaded to our cloud until you tap <em>I agree and continue</em>.</li>
+    <li>There are two purposes: <strong>required</strong> (account and backup) and <strong>optional</strong> (help improve the app). The optional switch starts <strong>off</strong>. Nothing is pre-selected and agreement is never assumed from installing the app or accepting the Terms.</li>
+    <li>If you do not agree to the required part, we cannot run your account or backup. You may go back or delete your data and account.</li>
+    <li>We record your choice on your phone and, once you are signed in, in your account: notice version, purposes, time and platform.</li>
+    <li><strong>Withdraw or change at any time</strong> in <em>Settings &rarr; Privacy &amp; consent</em>. Withdrawing is as easy as giving. Switching analytics off stops it, turns off Firebase Analytics, Crashlytics and Performance, and deletes the usage records we hold for you. Withdrawing the required consent is done by deleting your data or account (section 12).</li>
+    <li>When this notice changes in a way that matters, the app shows it again and asks you to choose again. On a new phone, after reinstalling, or after logging out and in, you are asked again.</li>
+    <li>You can read this notice again at any time in Settings.</li>
+    <li>The privacy screen and notice are currently shown in English. We are working to add the other languages the app supports. If you need help understanding anything here, write to us and we will explain it.</li>
+  </ul>
+</section>
 
-<h2>12. Your choices and rights, and deleting your data</h2>
-<ul>
-  <li><strong>Ask us to delete your data:</strong> you can request deletion at any time. In the app, go to Settings &rarr; Send feedback and write that you want your data deleted, or email us at the address below. Please include the name you entered in the app. We will delete your cloud backup, your usage information and your feedback, and tell you when it is done.</li>
-  <li><strong>Access or correction:</strong> email us with the name you entered and we will tell you what we hold about you and correct it where needed. Because the install ID is random and not linked to your phone number or email, we may need your name to find your record.</li>
-  <li><strong>Delete data on your phone:</strong> uninstall the app or clear its storage in your phone's Settings. This does <strong>not</strong> delete the cloud copy, so send us a deletion request as above if you want that removed too.</li>
-  <li><strong>Stop uploads:</strong> uninstalling the app stops all uploads.</li>
-  <li><strong>Emails:</strong> emails are sent only when you choose to send them.</li>
-  <li><strong>Customers who received an email:</strong> if you are a customer who received an email from a business using this app, please contact that business. You can also write to us and we will help where we can.</li>
-</ul>
+<section id="permissions">
+  <h2>7. Android permissions</h2>
+  <p>Android permissions are not the same as your consent to process data. We ask for a permission only when you use the feature that needs it, and the app works without it where possible.</p>
+  <div class="scroll"><table>
+    <tr><th>Permission / access</th><th>When it is used</th><th>If you refuse</th></tr>
+    <tr><td>Internet / network state</td><td>Sign-in, backup, sync, email, GST lookup, messages</td><td>The app works offline on your phone; cloud features wait</td></tr>
+    <tr><td>Camera</td><td>Taking a logo or signature photo; scanning the sign-in QR code shown on your PC</td><td>Choose a photo from the gallery instead, or sign in on the PC another way</td></tr>
+    <tr><td>Photos / files (system picker)</td><td>Choosing a logo, signature or a PDF to verify. We use the system picker and see only what you choose</td><td>Feature unavailable</td></tr>
+    <tr><td>Phone call (CALL_PHONE)</td><td>The call button next to a customer places the call directly</td><td>The phone dialer opens with the number filled in</td></tr>
+    <tr><td>Do Not Disturb access (optional)</td><td>Only if you turn on &ldquo;Do Not Disturb while the app is open&rdquo;; it is off by default</td><td>Feature unavailable</td></tr>
+  </table></div>
+  <p>We stop using a permission when the feature ends or you revoke it in Android Settings. We do not request contacts, SMS, call logs, microphone or location.</p>
+</section>
 
-<h2>13. How long we keep information</h2>
-<p>Information on your phone stays until you delete it, clear the app's data or uninstall the app. The cloud backup, usage information and feedback in our database are kept while the app is in use and for as long as we need them to support you and to understand and improve the app, or until you ask us to delete them. We do not store the content of emails in our own database; the providers listed in section 11 keep delivery records for the periods set by their own policies.</p>
+<section id="sdk">
+  <h2>8. Services and companies that handle data for us</h2>
+  <p>We use the services below. Each receives only what it needs. We keep a register of them and review it when the app changes.</p>
+  <div class="scroll"><table>
+    <tr><th>Service</th><th>Used for</th><th>Data</th><th>When it runs</th></tr>
+    <tr><td>Google Firebase Authentication</td><td>Phone sign-in and the SMS code</td><td>Mobile number, sign-in token</td><td>At sign-in</td></tr>
+    <tr><td>Google Firebase Realtime Database (Google Cloud)</td><td>Backup, sync, consent record, messages, feedback</td><td>Data in section 3</td><td>After you agree to this notice</td></tr>
+    <tr><td>Google Firebase Analytics, Crashlytics, Performance Monitoring</td><td>Usage, crashes, speed</td><td>Random install ID, events, crash and device information</td><td>Only after you switch analytics on</td></tr>
+    <tr><td>Our email gateway (hosted on Supabase) and Maileroo</td><td>Send the invoice PDF you choose to email</td><td>Recipient email, subject, message, PDF</td><td>Only when you send an email</td></tr>
+    <tr><td>GST portal lookup service (Express GST API)</td><td>Look up a GSTIN</td><td>GSTIN and CAPTCHA you type</td><td>Only when you look up a GSTIN</td></tr>
+    <tr><td>Google Play (install referrer)</td><td>Read the friend&rsquo;s invite code after install</td><td>Invite code</td><td>First start on Android</td></tr>
+    <tr><td>WhatsApp, email apps, share sheet on your phone</td><td>Share invoices or the app link when you tap share</td><td>What you choose to share</td><td>Only when you tap share</td></tr>
+  </table></div>
+  <p>These providers may have their own privacy terms. We choose providers that protect data and do not sell it. Analytics and advertising partners are not used.</p>
+</section>
 
-<h2>14. Security</h2>
-<p>Information sent to Firebase, to our email gateway and to the GST service travels over encrypted (HTTPS) connections. Cloud data is stored under a random install ID, and reading it requires the administrator's sign-in. Data stored on your phone is protected by your phone's own security, such as its screen lock, so we recommend keeping one. Email is not end-to-end encrypted once it leaves the app, so please avoid putting sensitive information in message text. No system is completely secure, so we cannot guarantee absolute security.</p>
+<section id="share">
+  <h2>9. Sharing and disclosure</h2>
+  <ul>
+    <li>We do <strong>not</strong> sell, rent or trade your data and we do not share it for advertising.</li>
+    <li>We share data only with the services in section 8, when you tell the app to share something (for example sending an invoice by email or WhatsApp), or when a law, court order or government authority requires it.</li>
+    <li>Only the publisher can open our admin console, which is protected by a login. It is used to give support, send messages, see account and usage information, and delete accounts on request.</li>
+    <li>If the app is ever transferred to another owner, your data stays under a policy at least as protective as this one, and we will tell you in the app first.</li>
+  </ul>
+</section>
 
-<h2>15. Children's privacy</h2>
-<p>The app is a business tool and is not directed to children under 13 (or under 18 where the law of your country requires parental consent). We do not knowingly collect information from children. If you believe a child has given us a name, please contact us and we will delete it.</p>
+<section id="abroad">
+  <h2>10. Storage location and transfers outside India</h2>
+  <p>Your data is stored on Google Cloud servers through Firebase. Google may process or back up data on servers in India or in other countries. We transfer data outside India only to the service providers in section 8 and only as far as Indian law permits. Data that stays on your phone or PC is stored only on that device.</p>
+</section>
 
-<h2>16. Changes to this policy</h2>
-<p>We may update this policy from time to time. When we do, we will change the "Last updated" date above and, for significant changes, show a notice in the app and ask you to accept the updated Terms &amp; conditions again. Continuing to use the app after a change means you accept the updated policy.</p>
+<section id="retention">
+  <h2>11. How long we keep data</h2>
+  <div class="scroll"><table>
+    <tr><th>Data</th><th>How long</th></tr>
+    <tr><td>Account, business data, consent record</td><td>Until you delete your data or account. They are then deleted from our database. Google may keep backups of its systems for a limited time until they expire on their own schedule.</td></tr>
+    <tr><td>Optional usage records</td><td>Until you switch analytics off or delete your account</td></tr>
+    <tr><td>Crash, screen and speed reports in Firebase</td><td>For the period set by Google for those services; we stop collecting them when you switch analytics off</td></tr>
+    <tr><td>Feedback</td><td>Until you ask us to delete it, or you delete your account (we then remove it using the deletion note below)</td></tr>
+    <tr><td>Deletion note (your phone number key, time, and any record we still must remove)</td><td>Only until we have finished removing your remaining records, then it is deleted</td></tr>
+    <tr><td>Safety copies on your phone</td><td>Removed automatically after 14 days (90 days for a copy of data that was not backed up)</td></tr>
+    <tr><td>Data on your phone or PC</td><td>Until you log out, delete your data, clear app data or uninstall</td></tr>
+    <tr><td>Anything a law requires us to keep (for example, records requested by an authority)</td><td>For the period that law requires, and we will tell you the reason if you ask</td></tr>
+  </table></div>
+  <p>We do not keep personal data for ever. Data we no longer need for its purpose is deleted or made anonymous.</p>
+</section>
 
-<h2>17. Contact us</h2>
-<p>Questions, requests or complaints about privacy, including requests to delete your data:</p>
-<p><strong>Free Invoice Generator</strong><br>
-Package name: com.abhay.invoice<br>
-Email: <a href="mailto:abhaybhagat170@gmail.com">abhaybhagat170@gmail.com</a></p>
+<section id="deletion">
+  <h2>12. Deleting your data</h2>
+  <p>Go to <em>Settings &rarr; Delete my data</em> (also in <em>Privacy &amp; consent</em>). You choose:</p>
+  <ul>
+    <li><strong>Delete only my data:</strong> deletes your profile, customers, products, invoices, khata and stock from our cloud and from your phone. You stay signed in; your name, sign-in account and usage records stay.</li>
+    <li><strong>Delete my account too:</strong> also deletes your name, usage records, referral code, consent record and your sign-in account, signs you out and erases everything on your phone.</li>
+  </ul>
+  <p>You type DELETE to confirm. It cannot be undone, so copy your data first if you want a copy. Because users cannot delete their own feedback, the app files a short note and we remove your feedback and any record the app could not delete, then delete the note. Deleting the app alone does not delete your cloud copy. You can also email us from the contact in section 22 and we will do it for you after checking it is you. Deleting your data does not remove copies you have already emailed or shared, or PDFs saved outside the app.</p>
+</section>
+
+<section id="rights">
+  <h2>13. Your rights</h2>
+  <ul>
+    <li><strong>Access:</strong> ask for a summary of the personal data we process and who we share it with. You can also copy all your data from <em>Settings &rarr; Privacy &amp; consent &rarr; Copy my data</em>.</li>
+    <li><strong>Correction and updating:</strong> edit your profile, customers, products and documents in the app; changes are saved to your backup. For anything you cannot change yourself, write to us.</li>
+    <li><strong>Erasure:</strong> delete your data or account as in section 12, subject to any legal retention.</li>
+    <li><strong>Withdraw consent:</strong> as in section 6.</li>
+    <li><strong>Grievance redressal:</strong> write to us (section 22). We will reply within the time the law sets. If you are not satisfied, you may complain to the Data Protection Board of India after you have used our grievance process.</li>
+    <li><strong>Nominate someone:</strong> you may nominate another person to exercise your rights if you die or cannot act for yourself. Tell us by email with the person&rsquo;s details.</li>
+  </ul>
+  <p>To protect you, we verify that a request comes from the phone number on the account before we show, change or delete anything. We never give your data to someone who cannot prove they are you. We keep a record of each request, how we handled it and when it was completed. You do not have to pay to use these rights.</p>
+</section>
+
+<section id="children">
+  <h2>14. Children</h2>
+  <p>The app is for business use by people aged <strong>18 or older</strong>. It is not made for children and we do not knowingly collect a child&rsquo;s personal data. We do not track or monitor children&rsquo;s behaviour and we do not show targeted ads to anyone. If you believe a child under 18 has used the app, write to us and we will delete the account and data after checking the request.</p>
+</section>
+
+<section id="security">
+  <h2>15. Security</h2>
+  <ul>
+    <li>All traffic between the app and our servers uses HTTPS (encrypted in transit).</li>
+    <li>Database rules let each signed-in phone number read and write only its own records. Only the publisher&rsquo;s admin account can read across accounts.</li>
+    <li>Sign-in uses a one-time SMS code. Sign-in tokens are managed by Google Firebase.</li>
+    <li>The admin console is protected by a password login and used only by the publisher.</li>
+    <li>Data in Google Cloud is encrypted at rest by Google. We keep passwords, private keys and sending keys for email on our servers and not inside the app, and we keep production data separate from testing.</li>
+    <li>When you log out, your data is removed from the phone only after it is safely in the cloud.</li>
+    <li>We keep the app and its libraries updated and review what each library sends.</li>
+    <li>Please keep your phone locked, do not share the SMS code, and log out on shared devices.</li>
+  </ul>
+  <p>No system is completely secure, but we take reasonable steps to protect your data and to reduce the harm if something goes wrong.</p>
+</section>
+
+<section id="breach">
+  <h2>16. Data breach</h2>
+  <p>If personal data is lost, accessed or disclosed without authority, we will contain it (for example, remove exposed keys and block access), find out who and what is affected, and fix the cause. We will tell the Data Protection Board of India and affected users, in the way and within the time that the law requires, and we will tell you in the app or by SMS or email what happened, what data was affected, what we have done and what you can do to protect yourself. We keep a record of each incident and what we learned from it.</p>
+</section>
+
+<section id="customers">
+  <h2>17. Data of your customers</h2>
+  <p>When you enter your customers&rsquo; names, phone numbers, addresses or GSTINs, you decide why and how that data is used for your own business, and you are responsible for having a right to use it. We store it for you only to run the app, back it up and restore it, and we do not use it for our own purposes, advertising or analytics. When you delete it, we delete it from our cloud.</p>
+</section>
+
+<section id="windows">
+  <h2>18. Windows app</h2>
+  <p>The Windows app can be used on the PC only, with no account; then your data stays on that computer and nothing is sent to us. If you sign in with your phone number (by QR code or browser), it works like the phone app, and the privacy choices and deletion above apply in the same way. Local data on the PC is erased by <em>Delete my data</em> or by removing the app.</p>
+</section>
+
+<section id="tracking">
+  <h2>19. Ads, tracking and profiling</h2>
+  <ul>
+    <li>No advertisements, no ad networks and no advertising ID.</li>
+    <li>No profiling or automated decisions that affect your rights.</li>
+    <li>We do not use your phone number, email, Android ID or any other identifier to track you across apps or websites. Optional reports use a random install ID.</li>
+    <li>We do not put personal data in links, logs, notifications or crash reports.</li>
+  </ul>
+</section>
+
+<section id="links">
+  <h2>20. Links to other services</h2>
+  <p>The app can open the GST portal, WhatsApp, your email app, the Play Store and this policy in your browser. Those services have their own privacy rules and we are not responsible for them.</p>
+</section>
+
+<section id="changes">
+  <h2>21. Changes to this policy</h2>
+  <p>We may update this policy when the app, our services or the law change. The version number and date at the top show the latest version. When a change matters, the app shows the new notice and asks you to choose again; the new policy is not applied to optional processing until you agree. Past versions are available on request.</p>
+</section>
+
+<section id="contact">
+  <h2>22. Contact and grievances</h2>
+  <p><strong>Publisher and Data Fiduciary:</strong> Abhay Bhagat<br>
+  <strong>Privacy, data request and grievance contact:</strong> <a href="mailto:abhaybhagat170@gmail.com">abhaybhagat170@gmail.com</a><br>
+  <strong>In the app:</strong> Settings &rarr; Privacy &amp; consent &rarr; Contact us about privacy; Settings &rarr; Send feedback.</p>
+  <p>Please write from the email you gave us or mention the mobile number of the account, say what you want (access, correction, deletion, withdrawing consent, complaint) and we will answer by email. A person reads and answers every request.</p>
+</section>
 
 </div>
-</main>
 </body>
 </html>
