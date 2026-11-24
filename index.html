@@ -36,7 +36,7 @@
 <header>
   <h1>Privacy Policy</h1>
   <div class="meta">Invoice Maker - Billing App (Play Store name: Free Invoice Generator) &middot; Package com.abhay.invoice<br>
-  Policy version 1 &middot; Effective 22 November 2026 &middot; Applies to the Android app, the iOS app (if offered) and the Windows app</div>
+  Policy version 1 &middot; Effective 22 November 2026 &middot; Applies to the Android app, the iOS app (if offered) and the Windows app, for users in India and in any other country</div>
 </header>
 
 <div class="note">
@@ -79,7 +79,8 @@
 
 <section id="law">
   <h2>2. Law that applies</h2>
-  <p>This policy is written under the Digital Personal Data Protection Act, 2023 and the Digital Personal Data Protection Rules, 2025 of India, and other Indian laws that apply to us. The Act is being brought into force in phases, and its main duties on notice, consent, rights, security and breach are scheduled to apply from 13 May 2027. We follow them now. This policy is not a certificate of legal compliance and may be updated when the law or notified rules change.</p>
+  <p>The app can be used in any country. This policy is written under the Digital Personal Data Protection Act, 2023 and the Digital Personal Data Protection Rules, 2025 of India, and other Indian laws that apply to us. The Act is being brought into force in phases, and its main duties on notice, consent, rights, security and breach are scheduled to apply from 13 May 2027. We follow them now. This policy is not a certificate of legal compliance and may be updated when the law or notified rules change.</p>
+  <p><strong>If you use the app outside India</strong>, the data protection laws of your own country may also give you rights, such as access, correction, deletion, restriction or portability of your data, or the right to complain to your local data protection authority. We respect these rights and will act on requests we are legally required to; write to us as described in section 22 and tell us your country.</p>
 </section>
 
 <section id="collect">
@@ -87,8 +88,9 @@
   <div class="scroll"><table>
     <tr><th>Data</th><th>How we get it</th><th>Why</th><th>Required?</th></tr>
     <tr><td>Mobile number (with +91 country code)</td><td>You type it to sign in; we send a one-time code by SMS</td><td>Sign-in. Your cloud data is stored under this number so it comes back on a new phone or on your PC</td><td>Required</td></tr>
+    <tr><td>Country, currency and tax settings (for example India GST, or VAT / sales tax and its name)</td><td>You choose them in Business profile; for a number from outside India the app first suggests the country of your phone number</td><td>Show your currency, tax lines and tax number label on invoices</td><td>Required to make invoices</td></tr>
     <tr><td>Name</td><td>You enter it after sign-in</td><td>Support and showing who owns the account</td><td>Required</td></tr>
-    <tr><td>Business profile: business name, address, GSTIN, PAN, state, phone, email, bank name, account number, IFSC, UPI ID, default terms, logo image, owner signature image, invoice style choices</td><td>You enter or upload it</td><td>Printed on your invoices; backup and restore</td><td>Required to make invoices; you choose what to fill</td></tr>
+    <tr><td>Business profile: business name, address, GSTIN or other tax / VAT number, PAN (India), state or region, phone, email, bank name, account number, IFSC, UPI ID, default terms, logo image, owner signature image, invoice style choices</td><td>You enter or upload it</td><td>Printed on your invoices; backup and restore</td><td>Required to make invoices; you choose what to fill</td></tr>
     <tr><td>Your customers: name, phone, email, address, GSTIN, state, notes</td><td>You enter it</td><td>Create invoices and khata entries; backup</td><td>You choose what to enter</td></tr>
     <tr><td>Products and stock: items, HSN/SAC, rates, quantities, batches, stock movements</td><td>You enter it</td><td>Create invoices; stock register; backup</td><td>You choose what to enter</td></tr>
     <tr><td>Documents: invoices, quotations, proforma invoices, delivery challans, amounts, taxes, payment status, dates, document numbers, notes, warranty text</td><td>You create them</td><td>Make PDFs, reports and GST returns; backup</td><td>Required for the app to work</td></tr>
@@ -166,11 +168,11 @@
   <p>We use the services below. Each receives only what it needs. We keep a register of them and review it when the app changes.</p>
   <div class="scroll"><table>
     <tr><th>Service</th><th>Used for</th><th>Data</th><th>When it runs</th></tr>
-    <tr><td>Google Firebase Authentication</td><td>Phone sign-in and the SMS code</td><td>Mobile number, sign-in token</td><td>At sign-in</td></tr>
+    <tr><td>Google Firebase Authentication</td><td>Phone sign-in and the SMS code (mobile numbers from any country; the SMS is sent through Google&rsquo;s phone-verification service and your mobile carrier)</td><td>Mobile number, sign-in token</td><td>At sign-in</td></tr>
     <tr><td>Google Firebase Realtime Database (Google Cloud)</td><td>Backup, sync, consent record, messages, feedback</td><td>Data in section 3</td><td>After you agree to this notice</td></tr>
     <tr><td>Google Firebase Analytics, Crashlytics, Performance Monitoring</td><td>Usage, crashes, speed</td><td>Random install ID, events, crash and device information</td><td>Only after you switch analytics on</td></tr>
     <tr><td>Our email gateway (hosted on Supabase) and Maileroo</td><td>Send the invoice PDF you choose to email</td><td>Recipient email, subject, message, PDF</td><td>Only when you send an email</td></tr>
-    <tr><td>GST portal lookup service (Express GST API)</td><td>Look up a GSTIN</td><td>GSTIN and CAPTCHA you type</td><td>Only when you look up a GSTIN</td></tr>
+    <tr><td>GST portal lookup service (Express GST API)</td><td>Look up a GSTIN</td><td>GSTIN and CAPTCHA you type (India GST mode only)</td><td>Only when you look up a GSTIN</td></tr>
     <tr><td>Google Play (install referrer)</td><td>Read the friend&rsquo;s invite code after install</td><td>Invite code</td><td>First start on Android</td></tr>
     <tr><td>WhatsApp, email apps, share sheet on your phone</td><td>Share invoices or the app link when you tap share</td><td>What you choose to share</td><td>Only when you tap share</td></tr>
   </table></div>
@@ -189,7 +191,7 @@
 
 <section id="abroad">
   <h2>10. Storage location and transfers outside India</h2>
-  <p>Your data is stored on Google Cloud servers through Firebase. Google may process or back up data on servers in India or in other countries. We transfer data outside India only to the service providers in section 8 and only as far as Indian law permits. Data that stays on your phone or PC is stored only on that device.</p>
+  <p>Your data is stored on Google Cloud servers through Firebase. Google may process or back up data on servers in India or in other countries. We transfer data outside India only to the service providers in section 8 and only as far as Indian law permits. Data that stays on your phone or PC is stored only on that device. If you use the app outside India, your data is sent to and stored on these servers, which may be in another country than yours, and the SMS code is sent through international carriers. By using the app you understand this; if you do not want it, you can use the Windows app without an account or delete your data at any time.</p>
 </section>
 
 <section id="retention">
